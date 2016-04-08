@@ -1,5 +1,8 @@
 <?php
 
+// Jednoduchý program
+// Vypíše se jen výstup (echo), co není ve značkách php zůstává nezměněno
+
 $currentHour = date('H');
 
 // Ve dne vypíšeme den a v noci noc.

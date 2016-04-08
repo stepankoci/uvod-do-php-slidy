@@ -38,8 +38,6 @@
 <body>
 
 <div class="reveal">
-
-    <!-- Any section element inside of this container is displayed as a slide -->
     <div class="slides">
         <section>
             <h1>Úvod DO PHP</h1>
@@ -47,6 +45,12 @@
             <p>
                 <small>Štěpán Kočí</small>
             </p>
+
+            <aside class="notes">
+                <p>Uvádět konkrétní příklady.</p>
+                <p>Ptát se, jestli je vše jasné.</p>
+                <p>Dávat pozor, jestli jsou ve střehu a výklad je baví.</p>
+            </aside>
         </section>
 
         <section>
@@ -55,7 +59,7 @@
                 <li>Štěpán Kočí</li>
                 <li>Dělám webové stránky a webové aplikace od roku 2000</li>
                 <li>Mám s kamarády firmu <a href="https://www.imatic.cz">Imatic Software</a></li>
-                <li>Dneska prezentuji poprvé:)</li>
+                <li>Dneska prezentuji poprvé :)</li>
             </ul>
         </section>
 
@@ -82,6 +86,7 @@
                 <li>programováním v PHP?</li>
             </ul>
             <aside class="notes">
+                <p>:)</p>
                 <p>Snažit se přizpůsobit prezentaci podle výsledku.</p>
             </aside>
         </section>
@@ -177,9 +182,10 @@
                 <li>Eshopy, informační systémy, rezervační systémy, sociální sítě...</li>
             </ul>
             <aside class="notes">
-                Příklady použití.
+                Příklady použití:
                 PHP čte data z databáze a zobrazuje je na webu.
                 Uživatel přes webovou stránku ukládá data přes PHP do databáze.
+                PHP je spouštěno na serveru a něco tam dělá (aktualizuje data podle jiné databáze, počítá...)
             </aside>
             <!-- todo: lepší body.. -->
         </section>
@@ -203,54 +209,64 @@
         </section>
 
         <section>
-            <h2>PHP prakticky</h2>
-            <section>
-                <!-- todo: líp.. -->
-                <!-- todo: uvod jak zacit, soubor, editace, spusteni.. -->
-                <!-- todo: doplnit z osnovy -->
-                <h3>Jak se PHP spouští?</h3>
-                <ul>
-                    <li>Musí být nainstalované na počítači/serveru</li>
-                    <li>Přes web server nebo příkazovou řádku se zavolá soubor, ve kterém je PHP uloženo:
-                        <ul>
-                            <li><code>http://www.stranka.cz/soubor.php</code></li>
-                            <li><code>C:\Program&nbsp;Files\php\php.exe&nbsp;soubor.php</code></li>
-                        </ul>
-                    </li>
-                </ul>
-            </section>
-            <section>
-                <h3>Jak vypadá PHP program?</h3>
-                <p>Program PHP se ukládá do souboru s koncovkou <code>.php</code></p>
-                <p>Soubor s PHP může obsahovat i jiný obsah než PHP, například HTML kód</p>
-                <p>Aby bylo PHP zpracováno, musí být uzavřeno mezi značkami
-                    <code class="php">&lt;?php</code> a
-                    <code class="php">?&gt;</code>
-                </p>
-            </section>
-            <section>
-                <h2>Ukázka</h2>
-                <p>Podíváme se, jak vypadá reálný PHP kód, a zkusíme i něco prakticky.</p>
-                <aside class="notes">
-                    <p>V ukázce opakovat, vysvětlovat detaily.</p>
-                </aside>
-            </section>
+            <h2>A teď praxe...</h2>
         </section>
 
         <section>
-            <h2>Rekapitulace</h2>
-            <p>Co jsme se naučili</p>
+            <h2>Jak napsat první PHP program?</h2>
 
+            <ul>
+                <li>Vytvoříme například na disku C adresář <code>php</code> (přímo v C)</li>
+                <li>Vytvoříme v něm textový soubor <code>test.php</code></li>
+                <li>Do souboru napíšeme:
+
+                    <pre><code>&lt;?php phpinfo(); ?&gt;</code></pre>
+
+                </li>
+            </ul>
+            <aside class="notes">
+                <p>Použijeme vestavěný webserver v PHP</p>
+                <p>Píšeme v poznámkovém bloku nebo jiném editoru, který máme, ne word:)</p>
+            </aside>
+        </section>
+        <section>
+            <h2>Jak spustit PHP program?</h2>
+            <ul>
+                <li>Otevřeme příkazovou řádku
+                    <br>(stisknout WIN+R, napsat <code>cmd</code> a stisknout ENTER)
+                </li>
+                <li>Do ní napíšeme <code>cd \php</code></li>
+                <li>Spustíme webserver příkazem <br><code>php -S localhost:8080 -t .</code></li>
+                <li>V prohlížeči otevřeme adresu <br><code>localhost:8080/test.php</code></li>
+            </ul>
+            <aside class="notes">
+                <p>Použijeme vestavěný webserver v PHP</p>
+                <p>Píšeme v poznámkovém bloku nebo jiném editoru, který máme, ne word:)</p>
+                <p>Lomítko může být normální i zpětné</p>
+            </aside>
+        </section>
+        <section>
+            <h2>Ukázka</h2>
+            <p>Zkusíme se podívat na reálný PHP kód a vysvětlit si co dělá.</p>
+            <aside class="notes">
+                <p>V ukázce opakovat, vysvětlovat detaily.</p>
+            </aside>
+        </section>
+        <section>
+            <h2>Rekapitulace</h2>
             <ul>
                 <li>PHP je super :)</li>
                 <li>Od malého webu po velké aplikace</li>
-                <li>Jednoduché, rychlé, má skvělou podporu, komunitu a dokumentaci, zlepšuje se</li>
-                <li>PHP programátor najde rychle práci</li>
+                <li>Jednoduché, rychlé, skvělá podpora, dokumentace</li>
+                <li>PHP programátor(ka) najde rychle práci</li>
                 <li>Spouští se přes web server nebo příkazovou řádku</li>
+                <li>PHP se zpracuje na serveru do prohlížeče se pošle jeho výstup</li>
                 <li>Víme, co jsou proměnné, operátory, řídící struktury, funkce a co dělat, když najdeme chybu</li>
             </ul>
 
-            <p>A to je jen začátek, dneska se toho ještě naučíme mnohem více :)</p>
+            <aside class="notes">
+                <p>A to je jen začátek, dneska se toho ještě naučíme mnohem více :)</p>
+            </aside>
         </section>
 
         <section>
@@ -259,7 +275,6 @@
             <p><br><br><em><a href="mailto:stepan.koci@gmail.com">stepan.koci@gmail.com</a></em></p>
         </section>
     </div>
-
 </div>
 
 <script src="lib/js/head.min.js"></script>
