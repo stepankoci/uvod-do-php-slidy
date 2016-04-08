@@ -52,9 +52,9 @@
         <section>
             <h2>Kdo jsem</h2>
             <ul>
-                <li>Štěpán Kočí <a href="https://twitter.com/stepankoci">@StepanKoci</a></li>
+                <li>Štěpán Kočí</li>
                 <li>Dělám webové stránky a webové aplikace od roku 2000</li>
-                <li>Máme s kamarády firmu <a href="https://www.imatic.cz">Imatic Software</a></li>
+                <li>Mám s kamarády firmu <a href="https://www.imatic.cz">Imatic Software</a></li>
             </ul>
         </section>
 
@@ -62,7 +62,8 @@
             <h2>O čem budu mluvit</h2>
             <ul>
                 <li>Ce je vlastně PHP a co se s ním dá dělat</li>
-                <li>Bude to trvat cca 20-30 minut</li>
+                <li>Bude to trvat cca 1 hodinu</li>
+                <li>Takže to bude velmi zkrácená verze:)</li>
             </ul>
         </section>
 
@@ -79,7 +80,7 @@
         <section>
             <h2>Co je PHP?</h2>
             <ul>
-                <li>Skriptovací jazyk</li> <!-- todo: dávat to sem? -->
+                <li>Programovací jazyk a jeho běhové prostředí</li>
                 <li>Open source</li>
                 <li>Dostupný pro většinu platforem (Windows, Linux, Mac)</li>
                 <li>Cca od roku 1994</li>
@@ -111,23 +112,39 @@
                 <li>Dobrá podpora webhostingů a rozšířenost</li>
                 <li>Velká komunita, hodně zdrojů</li>
                 <li>Skvělá dokumentace</li>
-                <li>Neustále se zlepšující se ekosystém</li>
+                <li>Neustále se zlepšující jazyk a ekosystém</li>
                 <li><strong>Po PHP programátorech je poptávka!</strong></li>
+                <li><strong>Po programátorkách větší!:)</strong></li>
             </ul>
+        </section>
+
+        <section>
+            <h2>Nevýhody PHP</h2>
+            <ul>
+                <li>Nekonzistence v chování funkcí</li>
+                <li>Nekonzistence v pojmenování a parametrech funkcí</li>
+                <li>S každým požadavkem se provádí celý kód znovu</li>
+                <li>Podpora Unicode v základu</li>
+                <li>Začátečník rychle sklouzne ke špatnému kódu</li>
+            </ul>
+
+            <p>Většina problémů se postupně řeší, každá nová verze PHP je&nbsp;o&nbsp;kus lepší.</p>
         </section>
 
         <section>
             <h2>Co se dá s PHP dělat?</h2>
-
             <ul>
-                <li>Programovat www stránky a aplikace</li>
-                <li>Command line programy</li>
+                <li>Programovat www stránky</li>
+                <li>Programovat www aplikace</li>
+                <li>Programovat command line programy</li>
             </ul>
+            <aside class="notes">
+                Další příklad třeba Imatic vstupní systém.
+            </aside>
         </section>
 
         <section>
             <h2>www stránky</h2>
-
             <ul>
                 <li>Chceme zobrazovat dynamický obsah</li>
                 <li>Web je rozsáhlý a nechceme spravovat desítky statických stránek</li>
@@ -140,29 +157,19 @@
 
             <ul>
                 <li>V PHP můžeme psát od malých aplikací po velké systémy</li>
-                <!-- todo: ještě něco? -->
+                <li>Existuje velké množství kvalitních hotových knihoven, které vývoj urychlují</li>
             </ul>
+            <!-- todo: lepší body.. -->
         </section>
 
         <section>
-            <h2>Příkazová řádka (Command line)</h2>
+            <h2>Command line programy</h2>
+
+            <p>Command line = příkazová řádka</p>
 
             <ul>
-                <li>Program se spouští z příkazové řádky</li>
+                <li>PHP program se spouští z příkazové řádky</li>
                 <li>Vhodné například pro automatizaci úkolů</li>
-                <!-- todo: ještě něco? -->
-            </ul>
-        </section>
-
-        <section>
-            <h2>Výhody PHP</h2>
-
-            <ul>
-                <li>Jednoduché a rychlé programování</li>
-                <li>Nekompiluje se, pouze se spustí</li>
-                <li>Dobrá podpora a rozšířenost</li>
-                <li>Velká komunita, hodně zdrojů</li>
-                <li>Neustále se zlepšující se ekosystém</li>
             </ul>
         </section>
 
@@ -190,37 +197,30 @@
                 </p>
             </section>
             <section>
-                <h3>Ukázka PHP</h3>
-                <pre><code class="php">
-                    &lt;?php echo 'Dobrý den:)'; ?&gt;
-                </code></pre>
-
-                <p>vypíše</p>
-
-                <pre><code class="html">
-                    Dobrý den:)
-                </code></pre>
+                <h2>Ukázka</h2>
+                <p>Podíváme se jak vypadá reálný PHP kód a zkusíme i něco prakticky.</p>
             </section>
-            <section>
-                <h3>Ukázka PHP s HTML</h3>
-                <pre><code class="php">
-                    <p>
-                        &lt;?php echo 'Dobrý den:)'; ?&gt;
-                    </p>
-                </code></pre>
+        </section>
 
-                <p>vypíše to samé, HTML obsah, který je mimo značky PHP je zachován,
-                    zpracoval se pouze obsah uzavřený do značek.</p>
+        <section>
+            <h2>Rekapitulace</h2>
+            <p>Co jsme se naučili</p>
 
-                <pre><code class="html">
-                    <p>
-                        Dobrý den:)
-                    </p>
-                </code></pre>
+            <ul>
+                <li>PHP je super:)</li>
+                <li>Od malého webu po velké aplikace</li>
+                <li>Jednoduché, rychlé, má skvělou podporu, komunitu a dokumentaci, zlepšuje se</li>
+                <li>PHP programátor najde rychle práci</li>
+                <li>Spouští se přes web server nebo příkazovou řádku</li>
+                <li>Víme co jsou proměnné, operátory, řídící struktury, funkce a co dělat když najdeme chybu</li>
+            </ul>
 
-                <aside class="notes">
-                </aside>
-            </section>
+            <p>A to je jen začátek, dneska se toho ještě naučíme mnohem více:)</p>
+        </section>
+
+        <section>
+            <h2>Děkuji za pozornost</h2>
+            <h3>Dotazy?</h3>
         </section>
     </div>
 
