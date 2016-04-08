@@ -1,8 +1,13 @@
 <?php
 
-echo 'Dobrý den';
+$currentHour = date('H');
 
-echo 'Nashledanou';
+// Ve dne vypíšeme den a v noci noc.
+if ($currentHour > 6 && $currentHour < 22) {
+    echo 'Den';
+} else {
+    echo 'Noc';
+}
 
 ?>
 

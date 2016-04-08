@@ -6,3 +6,8 @@ include 'misc/header.php';
 
 <?php
 include 'misc/footer.php';
+
+
+// include_once
+// require
+// require_once

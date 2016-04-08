@@ -5,6 +5,6 @@ error_reporting(E_ALL);
 
 //echo $a;
 
-//echo dare();
+//echo dare('H');
 
 //throw new Exception('Někde nastala chyba');
