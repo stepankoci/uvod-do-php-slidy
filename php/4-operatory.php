@@ -18,7 +18,7 @@ $c = $a / $b; // $c = 5
 $firstName = 'Dale';
 $lastName = 'Cooper';
 
-$fullName = $firstName . ' ' . $lastName; // $fullName = 'Date Cooper'
+$fullName = $firstName . ' ' . $lastName; // $fullName = 'Dale Cooper'
 
 // Operátory porovnání (hodnot)
 $c = $a === $b; // $c = false

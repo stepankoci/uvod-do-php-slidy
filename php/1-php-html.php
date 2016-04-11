@@ -21,3 +21,18 @@ if ($currentHour > 6 && $currentHour < 22) {
 </p>
 
 <p><strong>Právě je <?php echo $now; ?> protože je <?php echo $currentHour ?> hodin.</strong></p>
+
+
+<table border="1">
+    <?php
+
+    $rowStart = '<tr><td>';
+    $rowEnd = '</tr></td>';
+
+    $fruits = ['banana', 'orange', 'apple', 'haha'];
+
+    foreach ($fruits as $fruit) {
+        echo $rowStart . $fruit . $rowEnd;
+    }
+    ?>
+</table>

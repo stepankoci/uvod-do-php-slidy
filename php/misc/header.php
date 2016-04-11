@@ -11,4 +11,5 @@
 <header>
     <h1>Include demo</h1>
     <p>Hlavička stránky</p>
+    <p><?php echo date('Y.m.d'); ?></p>
 </header>
