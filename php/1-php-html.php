@@ -20,19 +20,11 @@ if ($currentHour > 6 && $currentHour < 22) {
     Cokoliv je mimo značky, zůstane tak jak je.
 </p>
 
-<p><strong>Právě je <?php echo $now; ?> protože je <?php echo $currentHour ?> hodin.</strong></p>
+<p>
+    <strong>
 
+        Právě je <?php echo $now; ?>
+        protože je <?php echo $currentHour; ?> hodin.
 
-<table border="1">
-    <?php
-
-    $rowStart = '<tr><td>';
-    $rowEnd = '</tr></td>';
-
-    $fruits = ['banana', 'orange', 'apple', 'haha'];
-
-    foreach ($fruits as $fruit) {
-        echo $rowStart . $fruit . $rowEnd;
-    }
-    ?>
-</table>
+    </strong>
+</p>

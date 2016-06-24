@@ -59,16 +59,16 @@
                 <li>Štěpán Kočí</li>
                 <li>Dělám webové stránky a webové aplikace od roku 2000</li>
                 <li>Mám s kamarády firmu <a href="https://www.imatic.cz">Imatic Software</a></li>
-                <li>Dneska prezentuji poprvé :)</li>
             </ul>
         </section>
 
         <section>
-            <h2>O čem budu mluvit</h2>
+            <h2>O čem to bude?</h2>
             <ul>
-                <li>Co je vlastně PHP a co se s ním dá dělat</li>
-                <li>Bude to trvat cca 1 hodinu</li>
-                <li>Takže to bude velmi zkrácená verze :)</li>
+                <li>Rychle proběhneme teorii co je PHP a co se s ním dá dělat</li>
+                <li>Podíváme se na ukázky PHP a něco s nimi vyzkoušíme</li>
+                <li>Bude to na celé dopoledne</li>
+                <li>I tak to bude rychlé</li>
                 <li>Ptejte se!</li>
             </ul>
 
@@ -218,8 +218,7 @@
             <h2>Jak napsat první PHP program?</h2>
 
             <ul>
-                <li>Vytvoříme například na disku C adresář <code>php</code> (přímo v C)</li>
-                <li>Vytvoříme v něm textový soubor <code>test.php</code></li>
+                <li>V <em>document root</em> web serveru vytvoříme textový soubor <code>test.php</code></li>
                 <li>Do souboru napíšeme:
 
                     <pre><code>&lt;?php phpinfo(); ?&gt;</code></pre>
@@ -233,23 +232,46 @@
         </section>
         <section>
             <h2>Jak spustit PHP program?</h2>
-            <ul>
-                <li>Otevřeme příkazovou řádku
-                    <br>(stisknout WIN+R, napsat <code>cmd</code> a stisknout ENTER)
-                </li>
-                <li>Do ní napíšeme <code>cd \php</code></li>
-                <li>Spustíme webserver příkazem <br><code>php -S localhost:8080 -t .</code></li>
-                <li>V prohlížeči otevřeme adresu <br><code>localhost:8080/test.php</code></li>
-            </ul>
+            <h3>Přes web server</h3>
+            <p>V prohlížeči otevřeme adresu <code>localhost/test.php</code></p>
+            <p>
+                <em>
+                    <small>(test.php musí být document root)</small>
+                </em>
+            </p>
+            <h3>Přes příkazovou řádku</h3>
+            <p><code>php test.php</code></p>
+            <p>
+                <em>
+                    <small>(php musí být v systémové cestě a příkazová řádka v adresáři document root web serveru)
+                    </small>
+                </em>
+            </p>
             <aside class="notes">
-                <p>Použijeme vestavěný webserver v PHP</p>
+                <p>Použijeme XAMPP</p>
                 <p>Píšeme v poznámkovém bloku nebo jiném editoru, který máme, ne word:)</p>
                 <p>Lomítko může být normální i zpětné</p>
+                <p>Windows 7</p>
+                <ul>
+                    <li>Tento počítač > Vlastnosti</li>
+                    <li>Upřesnit nastavení systému</li>
+                    <li>Proměnné prostředí</li>
+                    <li>PATH</li>
+                </ul>
             </aside>
         </section>
         <section>
             <h2>Ukázka</h2>
             <p>Zkusíme se podívat na reálný PHP kód a vysvětlit si, co dělá.</p>
+            <p>
+                Zdrojové kódy ukázek jsou na: <a href="http://bit.ly/28S4Qee">bit.ly/28S4Qee</a>
+            </p>
+            <p>
+                <small>
+                    (<a href="https://github.com/stepankoci/uvod-do-php-slidy/tree/master/php"
+                >https://github.com/stepankoci/uvod-do-php-slidy/tree/master/php</a>)
+                </small>
+            </p>
             <aside class="notes">
                 <p>V ukázce opakovat, vysvětlovat detaily.</p>
             </aside>
